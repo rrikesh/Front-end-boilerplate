@@ -1,0 +1,10 @@
+.hero {
+	.container {
+		@include rem('padding-top', $baseline*2);
+		@include rem('padding-bottom', $baseline*2);
+	}
+	small {
+		@include rem('font-size', 11px);
+		letter-spacing: 0.3px;
+	}
+}

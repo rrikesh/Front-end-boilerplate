@@ -1,0 +1,268 @@
+/*----------------------*\
+    #ROOT STYLESHEET
+\*----------------------*/
+/*---------------------------*\
+    #IMPORT ALL PARTIALS
+\*---------------------------*/
+/*---------------------------------------*\
+    #SITE-WIDE CONFIGURATION VARIABLES
+\*---------------------------------------*/
+/*------------------------*\
+    #HELPFUL SASS MIXINS
+\*------------------------*/
+/* Remove browser defaults */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, button, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/*  Set display type for HTML5 semantic elements */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/*  Force scrollbar display to prevent jumping on pages.
+ *  Fix text resize bug on mobile devices. */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  Display audio, canvas, and video elements as inline block elements. */
+audio, canvas, video {
+  display: inline-block; }
+
+/*  Prevent modern browsers from displaying audio without controls. */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*  Prevent img and video elements from spilling
+ *  outside of the page on smaller screens. */
+img, video {
+  max-width: 100%;
+  height: auto; }
+
+/*  Prevent iframe, object, and embed elements from
+ *  spilling outside of the page on smaller screens. */
+iframe, object, embed {
+  max-width: 100%; }
+
+/* Address [hidden] styling not present in IE 8/9.
+ * Hide the template element in IE, Safari, and Firefox < 22. */
+[hidden], template {
+  display: none;
+  visibility: hidden; }
+
+/*  Prevents IE from making scaled images look like crap */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/*  Address outline inconsistency between Chrome and other browsers. */
+a:focus, button:focus {
+  outline: thin dotted;
+  outline: 0.3125em auto -webkit-focus-ring-color;
+  outline-offset: -0.15625em; }
+
+/*  Improve readability when focused and also mouse hovered in all browsers. */
+a:hover, a:active {
+  outline: 0; }
+
+/*----------------------*\
+    #HELPER CLASSES
+\*----------------------*/
+::-moz-selection {
+  background: #FF0000;
+  text-shadow: none; }
+
+::selection {
+  background: #FF0000;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  height: 0.0625rem;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1.5rem 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio, canvas, img, video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/*
+ * Old browser update message - styling.
+ */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/*
+ * hides an element.
+ */
+.m--h {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Floats
+ */
+.m--fl {
+  float: left; }
+
+.m--fr {
+  float: right; }
+
+/*
+ * Misc helpers
+ */
+.m--mp {
+  margin-bottom: 1.5rem; }
+
+.m--db {
+  display: block; }
+
+.m--nm {
+  margin-bottom: 0; }
+
+.m--lu {
+  list-style-type: none; }
+
+.m--tu {
+  text-transform: uppercase; }
+
+/*
+ * Clearfix
+ */
+.cf:before, .cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
+/*-------------------------*\
+    #TYPOGRAPHY STYLES
+\*-------------------------*/
+h1, .alpha {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: 900; }
+
+h2, .beta {
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: 700; }
+
+h3, .gamma {
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: 700; }
+
+h4, .delta {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-weight: 400; }
+
+small, .small {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+.font-sans {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif; }
+
+/*---------------------------*\
+    #IMPORT ALL MODULES
+\*---------------------------*/
+/*---------------------------*\
+    #BASE STYLES
+\*---------------------------*/
+html, :root {
+  font-family: Georgia, Times, "Times New Roman", serif, serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  color: #444444; }
+
+p, table, img, blockquote, pre, ul, ol, h1, .alpha, h2, .beta {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+li ol, li ul {
+  margin-bottom: 0; }
+
+.lead {
+  text-align: center; }
+
+/*---------------------------*\
+    #GENERAL STYLES
+\*---------------------------*/
+.container {
+  max-width: 540px;
+  max-width: 33.75rem;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding: 0 1.25rem; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+
+/*---------------------------*\
+    #CONTENT STYLES
+\*---------------------------*/
+/*---------------------------*\
+    #HEADER STYLES
+\*---------------------------*/
+/*---------------------------*\
+    #FOOTER STYLES
+\*---------------------------*/
+.hero .container {
+  padding-top: 48px;
+  padding-top: 3rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem; }
+.hero small {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  letter-spacing: 0.3px; }

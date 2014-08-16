@@ -1,0 +1,12 @@
+default:
+    - 'concurrent:first'
+    - 'concurrent:second'
+    - 'concurrent:third'
+    - 'concurrent:fourth'
+dev:
+    - 'watch'
+build:
+    - 'concurrent:first'
+    - 'concurrent:second'
+    - 'concurrent:third'
+    - 'concurrent:fourth'
