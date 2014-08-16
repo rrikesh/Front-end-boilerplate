@@ -1,8 +1,8 @@
 # Front-End Boilerplate
 
-Hello! This repo contains a custom front-end boilerplate that we regularly use at [Paperboat]('http://paperboat.io'). If you are a Front-end developer or an aspiring Front-end dev, this might be very helpful to you :)
+Hello! This repo contains a custom front-end boilerplate that we regularly use at [Paperboat](http://paperboat.io). If you are a Front-end developer or an aspiring Front-end dev, this might be very helpful to you :)
 
-This boilerplate uses [SASS]('http://sass-lang.com') and is processed by a nifty little tool called [GruntJS]('http://gruntjs.com/'). If you are not familiar with these tools, I'd recommend you to read the Getting Started guide that is available on their respective websites.
+This boilerplate uses [SASS](http://sass-lang.com) and is processed by a nifty little tool called [GruntJS](http://gruntjs.com). If you are not familiar with these tools, I'd recommend you to read the Getting Started guide that is available on their respective websites.
 
 This boilerplate will do many things for you, thanks to grunt. It includes:
 
@@ -17,12 +17,12 @@ This boilerplate will do many things for you, thanks to grunt. It includes:
 
 - Add the name of your project in `package.json`
 - Run `npm install` (Make sure you have node/npm installed first)
-- If you do not already have [GruntJS]('http://gruntjs.com/') installed, please do it. 
-- After that, you're good to go. Run `grunt dev` during development. Alternatively, run `grunt build` to build (concat, minify etc) all your assets ready for production!
+- If you do not already have [GruntJS](http://gruntjs.com/) installed, please go ahead and [install it](http://gruntjs.com/getting-started). 
+- After that, you're good to go! Run `grunt dev` during development. Alternatively, run `grunt build` to build (concat, minify etc) all your assets ready for production.
 
 ## NOTES
 
-We are actively working on improving this boilerplate. If you have any questions, please don't hestitate to contact us by e-mail on [hello@paperboat.io]('mailto:hello@paperboat.io').
+We are actively working on improving this boilerplate. If you have any questions, please don't hestitate to contact us by e-mail on [hello@paperboat.io](mailto:hello@paperboat.io).
 
 If you want to contribute and/or improve this boilerplate, please submit a pull-request! :)
 
